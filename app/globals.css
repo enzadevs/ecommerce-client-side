@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center{
+    @apply flex items-center justify-center;
+}
+
+.flex-row-center{
+    @apply flex flex-row items-center;
+}
+
+.icons-wrapper{
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.icons{
+    height: 20px;
+    width: 20px;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "hehey",
+  "name": "ecommerce-client-side",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,8 @@
     "@plaiceholder/next": "^3.0.0",
     "formik": "^2.4.5",
     "next": "14.0.4",
+    "next-intl": "^3.3.1",
+    "next-themes": "^0.2.1",
     "nextjs-toploader": "^1.6.4",
     "plaiceholder": "^3.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
