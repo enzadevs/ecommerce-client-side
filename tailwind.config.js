@@ -5,7 +5,6 @@ module.exports = {
         './components/**/*.{js,ts,jsx,tsx,mdx}',
         './node_modules/react-tailwindcss-datepicker/dist/index.esm.js'
     ],
-    darkMode: 'class',
     theme: {
         extend: {
             colors: {
@@ -24,9 +23,26 @@ module.exports = {
                     800: '#085d42',
                     900: '#084c37',
                     950: '#032b20'
+                },
+                'grey': {
+                    DEFAULT: '#d4d4d4',
+                    50: '#f7f7f7',
+                    100: '#ededed',
+                    200: '#d4d4d4',
+                    300: '#c8c8c8',
+                    400: '#adadad',
+                    500: '#999999',
+                    600: '#888888',
+                    700: '#7b7b7b',
+                    800: '#676767',
+                    900: '#545454',
+                    950: '#363636'
                 }
             }
         }
     },
-    plugins: []
+    plugins: [require('daisyui')],
+    daisyui: {
+        themes: [],
+    }
 }

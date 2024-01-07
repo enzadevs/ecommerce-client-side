@@ -2,12 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply text-sm;
+}
+
+.max-width{
+    @apply mx-auto px-2 max-w-[1280px] w-full;
+}
+
 .center{
     @apply flex items-center justify-center;
 }
 
 .flex-row-center{
     @apply flex flex-row items-center;
+}
+
+.grid-template-rows{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
 }
 
 .icons-wrapper{
@@ -21,4 +35,48 @@
 .icons{
     height: 20px;
     width: 20px;
+}
+
+.button-primary{
+    @apply bg-fancy-500 rounded-md flex flex-row items-center gap-2 transition hover:text-white px-2 min-h-10;
+}
+
+.button-outline{
+    @apply border-2 border-fancy-500 rounded-md flex flex-row items-center gap-2 text-fancy-600 transition hover:bg-fancy-500 hover:text-white px-2 min-h-10;
+}
+
+.button-soft{
+    @apply bg-grey-50 rounded-md flex flex-row items-center gap-2 text-fancy-600 transition hover:bg-fancy-500 hover:text-white px-2 min-h-10;
+}
+
+.button-small{
+    @apply bg-grey-50 rounded-md flex flex-row items-center gap-2 text-fancy-600 transition hover:bg-fancy-500 hover:text-white px-2 min-h-8;
+}
+
+.custom-input-primary{
+    @apply bg-grey-50 border-2 border-grey-100 rounded-md outline-none transition focus:border-fancy-500 pl-4 pr-8 min-h-10;
+}
+
+.product-card{
+    @apply relative flex flex-col gap-2 border border-grey-100 rounded-xl transition hover:border-fancy-600 h-[310px] w-auto z-0;
+}
+
+.product-buttons-container{
+    @apply flex-row-center justify-center gap-2 absolute right-0 h-10 w-20 z-10;
+}
+
+.product-button{
+    @apply bg-grey-50 rounded-full center transition hover:text-red-500 h-8 w-8;
+}
+
+.product-image-wrapper{
+    @apply bg-teal-300 center rounded-xl h-52;
+}
+
+.product-title{
+    @apply text-base line-clamp-2;
+}
+
+.product-brand{
+    @apply rounded-lg text-base font-bold line-clamp-1 flex-[60%] max-w-[60%];
 }
