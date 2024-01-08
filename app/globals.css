@@ -58,7 +58,7 @@ body {
 }
 
 .product-card{
-    @apply relative flex flex-col gap-2 border border-grey-100 rounded-xl transition hover:border-fancy-600 h-[310px] w-auto z-0;
+    @apply bg-white relative flex flex-col gap-2 border border-grey-100 rounded-xl transition hover:border-fancy-600 h-[310px] z-0;
 }
 
 .product-buttons-container{
@@ -74,9 +74,25 @@ body {
 }
 
 .product-title{
-    @apply text-base line-clamp-2;
+    @apply text-base text-grey-900 line-clamp-2 transition hover:text-fancy-600;
 }
 
 .product-brand{
-    @apply rounded-lg text-base font-bold line-clamp-1 flex-[60%] max-w-[60%];
+    @apply rounded-lg text-base font-bold line-clamp-1 flex-[45%] max-w-[45%];
+}
+
+footer{
+    @apply bg-grey-50 border-t mt-auto h-fit;
+}
+
+.footer-container{
+    @apply flex flex-row justify-between py-8 max-width;
+}
+
+.footer-header{
+    @apply text-lg text-grey-900 font-bold;
+}
+
+.nav-link{
+    @apply text-grey-900 transition hover:text-fancy-600;
 }
