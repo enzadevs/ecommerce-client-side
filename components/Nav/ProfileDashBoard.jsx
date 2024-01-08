@@ -1,16 +1,12 @@
-'use client'
-
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 import {PiUserCircle} from 'react-icons/pi'
 
 export default function ProfileDashBoard(){
-    const router = useRouter()
-
     return(
-        <button className='button-outline' onClick={() => router.push('/profile')}>
+        <Link href='/profile' className='button-outline'>
             <>Hasabym</>
             <PiUserCircle className='icons'/>
-        </button>
+        </Link>
     )
 }

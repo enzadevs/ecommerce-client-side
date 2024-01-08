@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {CiLocationOn} from 'react-icons/ci'
+import {GrLocation} from 'react-icons/gr'
 import {PiFire,PiHeart,PiGift,PiPercent} from 'react-icons/pi'
 import {LiaAppleAltSolid} from 'react-icons/lia'
 import {RxHamburgerMenu} from 'react-icons/rx'
@@ -12,33 +12,33 @@ export default function SubNavBar(){
                 <RxHamburgerMenu className='icons'/>
                 Ähli kategoriýalar
             </Link>
-            <Link href='/' className='button-small'>
+            <Link href='/grocery' className='button-small'>
                 Gök-önümler
                 <LiaAppleAltSolid className='icons'/>
             </Link>
-            <Link href='/' className='button-small'>
+            <Link href='/new' className='button-small'>
                 Täze
                 <PiFire className='icons'/>
             </Link>
-            <Link href='/' className='button-small'>
+            <Link href='/popular' className='button-small'>
                 Iň köp halananlar
                 <PiHeart className='icons'/>
             </Link>
-            <Link href='/' className='button-small'>
+            <Link href='/sale' className='button-small'>
                 Aksiýalar   
                 <PiPercent className='icons'/>
             </Link>
-            <Link href='/' className='button-small'>
+            <Link href='/gifts' className='button-small'>
                 Sowgatlyk sertifikatlar
                 <PiGift className='icons'/>
             </Link>
-            <Link href='/' className='button-small'>
+            <Link href='/news' className='button-small'>
                 Täzelikler
                 <IoNewspaperOutline className='icons'/>
             </Link>
             <button className='button-small'>
                 Aşgabat ş.
-                <CiLocationOn className='icons'/>
+                <GrLocation className='icons'/>
             </button>
         </div>
     )

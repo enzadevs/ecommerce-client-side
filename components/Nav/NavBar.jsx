@@ -11,11 +11,11 @@ export default function NavBar(){
             </Link>
             <NavSearchBox/>
             <span className='flex-row-center gap-2 rounded-lg ml-auto h-10'>
-                <Link href='/' className='button-outline hover:text-white'>
+                <Link href='/profile/liked' className='button-outline hover:text-white'>
                     <>Halanlarym</>
                     <PiHeart className='icons'/>
                 </Link>
-                <Link href='/' className='button-outline hover:text-white'>
+                <Link href='/profile/cart' className='button-outline hover:text-white'>
                     <>Sebet</>
                     <PiShoppingCartSimple className='icons'/>
                 </Link>

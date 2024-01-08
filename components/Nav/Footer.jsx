@@ -5,7 +5,7 @@ export default function Footer(){
         <footer>
             <nav className='footer-container'>
                 <div className='flex flex-col gap-2'>
-                    <h2 className='text-xl font-bold'>E-Commerce</h2>
+                    <h2 className='text-grey-900 text-xl font-bold'>E-Commerce</h2>
                     <p>Developed by <Link href='https://alemtilsimat.com/' className='nav-link'>Älem Tilsimat HJ</Link>.</p>
                 </div>
                 <div className='flex flex-col gap-4'>
