@@ -4,7 +4,7 @@ import FancyImage from 'public/assets/woman-with-shopping-bags-jumping.jpg'
 
 export default function LoginPage(){
     return(
-        <div className='center h-[70vh]'>
+        <div className='center h-[768px]'>
             <div className='border-2 border-grey-100 rounded-xl flex-row-center w-[768px]'>
                 <div className='rounded-xl relative flex-[50%] max-w-[50%] h-[512px]'>
                     <Image
