@@ -3,7 +3,7 @@ import {PiUserCircle,PiShoppingCartSimple,PiHeart} from 'react-icons/pi'
 
 export default function ProfileLayout({children}){
     return(
-        <div className='border-l border-r flex min-h-[768px] max-width'>
+        <div className='border-l border-r flex min-h-[768px] mx-auto max-w-[1280px] w-full'>
             <div className='border-r min-h-[768px] w-72'>
                 <div className='border-b flex flex-col items-center justify-center gap-2 py-4 h-fit'>
                     <div className='bg-fancy-500 rounded-full h-48 w-48'></div>
@@ -24,7 +24,7 @@ export default function ProfileLayout({children}){
                     </Link>
                 </>
             </div>
-            <div className='bg-yellow-400 flex-[80%] max-w-[80%]'>
+            <div className='p-4 flex-[80%] max-w-[80%]'>
                 {children}
             </div>
         </div>

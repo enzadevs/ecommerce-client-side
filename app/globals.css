@@ -58,7 +58,7 @@ body {
 }
 
 .product-card{
-    @apply bg-white relative flex flex-col gap-2 border border-grey-100 rounded-xl transition hover:border-fancy-600 h-[310px] z-0;
+    @apply bg-white relative flex flex-col gap-2 border border-grey-200 rounded-xl transition hover:border-fancy-600 h-[310px] z-0;
 }
 
 .product-buttons-container{
@@ -95,4 +95,12 @@ footer{
 
 .nav-link{
     @apply text-grey-900 transition hover:text-fancy-600;
+}
+
+.h2-headers{
+    @apply text-xl text-fancy-600 font-bold;
+}
+
+.h3-headers{
+    @apply flex-row-center gap-2 text-base text-fancy-600;
 }

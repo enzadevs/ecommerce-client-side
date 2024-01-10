@@ -6,7 +6,7 @@ import {PiShoppingCartSimple,PiHeart} from 'react-icons/pi'
 export default function NavBar(){
     return(
         <nav className='flex-row-center gap-4 h-16 max-width'>
-            <Link href='/' className='text-fancy-600 text-lg font-semibold flex-row-center gap-2 h-10'>
+            <Link href='/' className='text-fancy-600 text-lg font-bold flex-row-center gap-2 h-10'>
                 E-Commerce
             </Link>
             <NavSearchBox/>

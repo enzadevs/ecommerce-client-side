@@ -8,7 +8,7 @@ export default function Groceries(){
         <div className='bg-grey-50 rounded-lg flex flex-col py-4 max-width'>
             <div className='flex-row-center h-12'>
                 <h2 className='text-xl text-fancy-600 font-bold my-2'>Ter gök önümler 🍎</h2>
-                <Link href='/new' className='button-small ml-auto'>Ählisi {'>'}</Link>
+                <Link href='/grocery' className='button-small ml-auto'>Ählisi {'>'}</Link>
             </div>
             <div className='grid-template-rows'>
                 {i.map(item => {

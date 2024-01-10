@@ -1,7 +1,7 @@
 import Highlights from 'components/Nav/Highlights'
 import IndexSwiper from 'components/Functions/IndexSwiper'
 import NewProducts from 'components/Containers/NewProducts'
-import TopProducts from 'components/Containers/TopProducts'
+import DailyProducts from 'components/Containers/DailyProducts'
 import Groceries from 'components/Containers/Groceries'
 
 export default function HomePage(){
@@ -10,7 +10,7 @@ export default function HomePage(){
             <Highlights/>
             <IndexSwiper/>
             <NewProducts/>
-            <TopProducts/>
+            <DailyProducts/>
             <Groceries/>
         </div>
     )

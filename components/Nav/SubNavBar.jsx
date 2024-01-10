@@ -2,16 +2,13 @@ import Link from 'next/link'
 import {GrLocation} from 'react-icons/gr'
 import {PiFire,PiHeart,PiGift,PiPercent} from 'react-icons/pi'
 import {LiaAppleAltSolid} from 'react-icons/lia'
-import {RxHamburgerMenu} from 'react-icons/rx'
 import {IoNewspaperOutline} from 'react-icons/io5'
+import AllCategoriesMenu from 'components/Containers/AllCategoriesMenu'
 
 export default function SubNavBar(){
     return(
         <div className='flex-row-center justify-between max-width'>
-            <Link href='/categories' className='button-small'>
-                <RxHamburgerMenu className='icons'/>
-                Ähli kategoriýalar
-            </Link>
+            <AllCategoriesMenu/>
             <Link href='/grocery' className='button-small'>
                 Gök-önümler
                 <LiaAppleAltSolid className='icons'/>
