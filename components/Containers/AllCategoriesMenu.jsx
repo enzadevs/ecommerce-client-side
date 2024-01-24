@@ -14,7 +14,7 @@ export default function AllCategoriesMenu(){
                 <RxHamburgerMenu className='icons'/>
                 Ähli kategoriýalar
             </button>
-            <div className='bg-grey-100 border border-grey-200 dropdown-content rounded-lg grid-template-rows absolute top-10 px-2 min-h-[360px] w-[1280px] z-[2]'>
+            <div className='bg-grey-100 border border-grey-200 rounded-lg grid-template-rows absolute top-10 px-2 min-h-[360px] w-[1280px] z-[2]'>
                 <div className='flex flex-col gap-2 py-2 px-4 h-fit w-fit'>
                     <h3 className='h3-headers'>Elektronika <AiOutlineDesktop className='icons'/></h3>
                     <ul className='flex flex-col gap-2'>
