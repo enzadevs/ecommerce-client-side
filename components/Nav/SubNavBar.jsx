@@ -8,7 +8,7 @@ import AllCategoriesMenu from 'components/Containers/AllCategoriesMenu'
 export default function SubNavBar(){
     return(
         <div className='flex-row-center justify-between max-width'>
-            <AllCategoriesMenu/>
+            {/* <AllCategoriesMenu/> */}
             <Link href='/grocery' className='button-small'>
                 Gök-önümler
                 <LiaAppleAltSolid className='icons'/>
