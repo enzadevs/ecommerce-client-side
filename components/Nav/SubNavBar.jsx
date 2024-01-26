@@ -3,12 +3,10 @@ import {GrLocation} from 'react-icons/gr'
 import {PiFire,PiHeart,PiGift,PiPercent} from 'react-icons/pi'
 import {LiaAppleAltSolid} from 'react-icons/lia'
 import {IoNewspaperOutline} from 'react-icons/io5'
-import AllCategoriesMenu from 'components/Containers/AllCategoriesMenu'
 
 export default function SubNavBar(){
     return(
         <div className='flex-row-center justify-between max-width'>
-            {/* <AllCategoriesMenu/> */}
             <Link href='/grocery' className='button-small'>
                 Gök-önümler
                 <LiaAppleAltSolid className='icons'/>

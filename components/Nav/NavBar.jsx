@@ -1,27 +1,34 @@
 import Link from 'next/link'
 import NavSearchBox from './NavSearchBox'
-import ProfileDashBoard from './ProfileDashBoard'
-import {PiShoppingCartSimple,PiHeart} from 'react-icons/pi'
+import {PiShoppingCartSimple,PiHeart,PiUserCircle} from 'react-icons/pi'
+import {HiOutlineHome} from 'react-icons/hi2'
+import {MdOutlineCategory} from 'react-icons/md'
 
 export default function NavBar(){
     return(
-        <nav className='flex-row-center gap-4 h-16 max-width'>
-            <Link href='/' className='text-fancy-600 text-lg font-bold flex-row-center gap-2 h-10'>
-                E-Commerce
+        <nav className='border-b flex-row-center gap-2 md:gap-4 h-fit max-width'>
+            <Link href='/' className='button-outline text-base font-semibold'>
+                Satyn Al
             </Link>
             <NavSearchBox/>
-            <span className='flex-row-center gap-2 rounded-lg ml-auto h-10'>
-                <Link href='/profile/liked' className='button-outline hover:text-white'>
-                    <>Halanlarym</>
+            <span className='nav-bar-buttons-container'>
+                <Link href='/' className='nav-button md:hidden'>
+                    <HiOutlineHome className='icons'/>
+                </Link>
+                <Link href='/profile/liked' className='nav-button'>
                     <PiHeart className='icons'/>
+                    <p className='hidden md:block'>Halanlarym</p>
                 </Link>
-                <Link href='/profile/cart' className='button-outline hover:text-white'>
-                    <>Sebet</>
+                <Link href='/profile/cart' className='nav-button'>
                     <PiShoppingCartSimple className='icons'/>
+                    <p className='hidden md:block'>Sebet</p>
                 </Link>
-                <ProfileDashBoard/>
-                <button className='button-outline'>TM</button>
+                <Link href='/profile' className='nav-button'>
+                    <PiUserCircle className='icons'/>
+                    <p className='hidden md:block'>Hasabym</p>
+                </Link>
             </span>
+            <button className='button-outline center w-11'>TM</button>
         </nav>
     )
 }

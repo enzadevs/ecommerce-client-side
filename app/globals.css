@@ -38,26 +38,34 @@ body {
 }
 
 .button-primary{
-    @apply bg-fancy-500 rounded-md flex flex-row items-center gap-2 transition hover:text-white px-2 min-h-10;
+    @apply bg-fancy-500 rounded-md text-white flex flex-row items-center gap-2 transition px-2 h-11;
 }
 
 .button-outline{
-    @apply border-2 border-fancy-500 rounded-md flex flex-row items-center gap-2 text-fancy-600 transition hover:bg-fancy-500 hover:text-white px-2 min-h-10;
+    @apply border border-fancy-700 text-fancy-700 font-semibold rounded-md flex flex-row items-center gap-2 transition hover:bg-fancy-100 px-2 h-11;
 }
 
 .button-soft{
-    @apply bg-grey-50 rounded-md flex flex-row items-center gap-2 text-fancy-600 transition hover:bg-fancy-500 hover:text-white px-2 min-h-10;
+    @apply bg-grey-50 rounded-md flex flex-row items-center gap-2 text-fancy-600 transition hover:bg-fancy-500 hover:text-white px-2 h-11;
 }
 
 .button-small{
-    @apply bg-grey-50 rounded-md flex flex-row items-center gap-2 text-fancy-600 transition hover:bg-fancy-500 hover:text-white px-2 min-h-8;
+    @apply bg-grey-50 rounded-md flex flex-row items-center gap-2 text-fancy-600 transition hover:bg-fancy-500 hover:text-white px-2 h-8;
 }
 
-.custom-input-primary{
-    @apply bg-grey-50 border-2 border-grey-100 rounded-md outline-none transition focus:border-fancy-500 pl-4 pr-8 min-h-10;
+.input-primary{
+    @apply bg-white border border-grey-400 rounded-md shadow-sm outline-none transition focus:border-fancy-700 pl-4 pr-8 h-11;
 }
 
-.product-card{
+.nav-bar-buttons-container{
+    @apply border-t border-black fixed flex flex-row items-center justify-between bottom-0 left-0 h-11 w-full z-10 md:relative md:flex md:flex-row md:items-center md:gap-4 md:w-fit;
+}
+
+.nav-button{
+    @apply border-r border-black center transition hover:bg-fancy-100 h-full w-full;
+}
+
+/* .product-card{
     @apply bg-white relative flex flex-col gap-2 border border-grey-200 rounded-xl transition hover:border-fancy-600 h-[310px] z-0;
 }
 
@@ -79,9 +87,9 @@ body {
 
 .product-brand{
     @apply rounded-lg text-base font-bold line-clamp-1 flex-[45%] max-w-[45%];
-}
+} */
 
-footer{
+/* footer{
     @apply bg-grey-50 border-t mt-auto h-fit;
 }
 
@@ -103,4 +111,4 @@ footer{
 
 .h3-headers{
     @apply flex-row-center gap-2 text-base text-fancy-600;
-}
+} */

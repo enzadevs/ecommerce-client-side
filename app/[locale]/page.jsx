@@ -7,11 +7,11 @@ import Groceries from 'components/Containers/Groceries'
 export default function HomePage(){
     return(
         <div className='flex flex-col gap-4 mb-4'>
-            <Highlights/>
+            {/* <Highlights/>
             <IndexSwiper/>
             <NewProducts/>
             <DailyProducts/>
-            <Groceries/>
+            <Groceries/> */}
         </div>
     )
 }

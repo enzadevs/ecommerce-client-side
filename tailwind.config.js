@@ -2,8 +2,7 @@
 module.exports = {
     content: [
         './app/**/*.{js,ts,jsx,tsx,mdx}',
-        './components/**/*.{js,ts,jsx,tsx,mdx}',
-        './node_modules/react-tailwindcss-datepicker/dist/index.esm.js'
+        './components/**/*.{js,ts,jsx,tsx,mdx}'
     ],
     theme: {
         extend: {
@@ -11,32 +10,32 @@ module.exports = {
                 transparent: 'tranparent',
                 current: 'currentColor',
                 'fancy': {
-                    DEFAULT : '#60e1a9',
-                    50: '#ecfdf4',
-                    100: '#d2f9e4',
-                    200: '#a9f1cd',
-                    300: '#60e1a9',
-                    400: '#38cf92',
-                    500: '#14b57a',
-                    600: '#089363',
-                    700: '#077552',
-                    800: '#085d42',
-                    900: '#084c37',
-                    950: '#032b20'
+                    DEFAULT : '#10a37f',
+                    50: '#ecfdf6',
+                    100: '#d1fae9',
+                    200: '#a8f2d6',
+                    300: '#6fe6c1',
+                    400: '#36d1a5',
+                    500: '#10a37f',
+                    600: '#079474',
+                    700: '#057760',
+                    800: '#075e4e',
+                    900: '#074d41',
+                    950: '#022c26'
                 },
                 'grey': {
-                    DEFAULT: '#d4d4d4',
+                    DEFAULT: '#f5f5f5',
                     50: '#f7f7f7',
-                    100: '#ededed',
-                    200: '#d4d4d4',
-                    300: '#c8c8c8',
-                    400: '#adadad',
-                    500: '#999999',
-                    600: '#888888',
-                    700: '#7b7b7b',
-                    800: '#676767',
-                    900: '#545454',
-                    950: '#363636'
+                    100: '#efefef',
+                    200: '#dcdcdc',
+                    300: '#bdbdbd',
+                    400: '#989898',
+                    500: '#7c7c7c',
+                    600: '#656565',
+                    700: '#525252',
+                    800: '#464646',
+                    900: '#3d3d3d',
+                    950: '#292929'
                 }
             }
         }
