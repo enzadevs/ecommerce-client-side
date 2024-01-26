@@ -2,7 +2,7 @@ import Link from 'next/link'
 import NavSearchBox from './NavSearchBox'
 import {PiShoppingCartSimple,PiHeart,PiUserCircle} from 'react-icons/pi'
 import {HiOutlineHome} from 'react-icons/hi2'
-import {MdOutlineCategory} from 'react-icons/md'
+import {TbCategory2} from 'react-icons/tb'
 
 export default function NavBar(){
     return(
@@ -14,6 +14,11 @@ export default function NavBar(){
             <span className='nav-bar-buttons-container'>
                 <Link href='/' className='nav-button md:hidden'>
                     <HiOutlineHome className='icons'/>
+                    <p className='text-[8px]'>Home</p>
+                </Link>
+                <Link href='/categories' className='nav-button'>
+                    <TbCategory2 className='icons'/>
+                    <p className='text-[8px]'>Bölümler</p>
                 </Link>
                 <Link href='/profile/liked' className='nav-button'>
                     <PiHeart className='icons'/>

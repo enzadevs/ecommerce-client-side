@@ -10,16 +10,17 @@ export const metadata = {
     content:'width=device-width, initial-scale=1',
 }
 
-import {Noto_Sans} from 'next/font/google'
+import {Manrope} from 'next/font/google'
 
-const notosans = Noto_Sans({
+const currentFont = Manrope({
     subsets: ['latin','cyrillic'],
-    display: 'swap'
+    display: 'swap',
+    weight: ['300','400','500','700']
 })
 
 export default function RootLayout({children,params}){
     return(
-        <html lang={params.locale} className={notosans.className} suppressHydrationWarning>
+        <html lang={params.locale} className={currentFont.className} suppressHydrationWarning>
             <body className='flex flex-col min-h-screen'>
                 <span className='border-b shadow-sm pb-2 sticky top-0 w-full z-[2]'>
                     <NavBar/>

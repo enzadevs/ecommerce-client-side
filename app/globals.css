@@ -58,11 +58,11 @@ body {
 }
 
 .nav-bar-buttons-container{
-    @apply border-t border-black fixed flex flex-row items-center justify-between bottom-0 left-0 h-11 w-full z-10 md:relative md:flex md:flex-row md:items-center md:gap-4 md:w-fit;
+    @apply border-t border-black fixed flex flex-row items-center justify-between bottom-0 left-0 h-10 w-full z-10 md:relative md:flex md:flex-row md:items-center md:gap-4 md:w-fit;
 }
 
 .nav-button{
-    @apply border-r border-black center transition hover:bg-fancy-100 h-full w-full;
+    @apply border-r border-black flex flex-col gap-0 items-center justify-center transition hover:bg-fancy-100 h-full w-full;
 }
 
 /* .product-card{
