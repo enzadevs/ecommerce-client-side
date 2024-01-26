@@ -10,39 +10,41 @@ import 'styles/swiper.css'
 
 export default function IndexSwiper(){
     return(
-        <div className='bg-grey-50 text-fancy-600 h-[360px] w-full'>
-            <Swiper
-                navigation
-                pagination={true}
-                modules={[Navigation,Pagination,Autoplay]}
-                className='h-full max-width'
-                loop='true'
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
-                >
-                    <SwiperSlide>
-                        <span className='center h-full w-full'>
-                            Slider 1
-                        </span>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <span className='center h-full w-full'>
-                            Slider 2
-                        </span>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <span className='center h-full w-full'>
-                            Slider 3
-                        </span>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <span className='center h-full w-full'>
-                            Slider 4
-                        </span>
-                    </SwiperSlide>
-            </Swiper>
+        <div className='max-width'>
+            <div className='border border-grey-100 rounded-lg text-fancy-600 h-[180px] md:h-[260px] lg:h-[360px] w-full'>
+                <Swiper
+                    navigation
+                    pagination={true}
+                    modules={[Navigation,Pagination,Autoplay]}
+                    className='rounded-[4px] h-full w-full'
+                    loop='true'
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    }}
+                    >
+                        <SwiperSlide>
+                            <span className='center h-full w-full'>
+                                Slider 1
+                            </span>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <span className='center h-full w-full'>
+                                Slider 2
+                            </span>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <span className='center h-full w-full'>
+                                Slider 3
+                            </span>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <span className='center h-full w-full'>
+                                Slider 4
+                            </span>
+                        </SwiperSlide>
+                </Swiper>
+            </div>
         </div>
     )
 }

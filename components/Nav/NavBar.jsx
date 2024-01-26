@@ -1,39 +1,38 @@
 import Link from 'next/link'
 import NavSearchBox from './NavSearchBox'
-import {PiShoppingCartSimple,PiHeart,PiUserCircle} from 'react-icons/pi'
 import {HiOutlineHome} from 'react-icons/hi2'
 import {TbCategory2} from 'react-icons/tb'
+import {PiShoppingCartSimple,PiHeart,PiUserCircle} from 'react-icons/pi'
+import {GrLanguage} from 'react-icons/gr'
 
 export default function NavBar(){
     return(
-        <nav className='border-b flex-row-center gap-2 md:gap-4 h-fit max-width'>
-            <Link href='/' className='button-outline text-base font-semibold'>
-                Satyn Al
+        <nav className='flex-row-center gap-2 md:gap-4 h-fit max-width'>
+            <Link href='/' className='button-outline center text-base font-semibold w-11'>
+                Al
             </Link>
             <NavSearchBox/>
             <span className='nav-bar-buttons-container'>
                 <Link href='/' className='nav-button md:hidden'>
-                    <HiOutlineHome className='icons'/>
-                    <p className='text-[8px]'>Home</p>
+                    <HiOutlineHome className='h-6 w-6'/>
                 </Link>
-                <Link href='/categories' className='nav-button'>
-                    <TbCategory2 className='icons'/>
-                    <p className='text-[8px]'>Bölümler</p>
+                <Link href='/categories' className='nav-button md:hidden'>
+                    <TbCategory2 className='h-6 w-6'/>
                 </Link>
                 <Link href='/profile/liked' className='nav-button'>
-                    <PiHeart className='icons'/>
+                    <PiHeart className='h-6 w-6 md:icons'/>
                     <p className='hidden md:block'>Halanlarym</p>
                 </Link>
                 <Link href='/profile/cart' className='nav-button'>
-                    <PiShoppingCartSimple className='icons'/>
+                    <PiShoppingCartSimple className='h-6 w-6 md:icons'/>
                     <p className='hidden md:block'>Sebet</p>
                 </Link>
                 <Link href='/profile' className='nav-button'>
-                    <PiUserCircle className='icons'/>
+                    <PiUserCircle className='h-6 w-6 md:icons'/>
                     <p className='hidden md:block'>Hasabym</p>
                 </Link>
             </span>
-            <button className='button-outline center w-11'>TM</button>
+            <button className='button-outline center w-11'><GrLanguage className='h-4 w-4'/></button>
         </nav>
     )
 }

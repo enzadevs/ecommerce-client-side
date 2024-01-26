@@ -1,7 +1,0 @@
-import {RxHamburgerMenu} from 'react-icons/rx'
-import {AiOutlineDesktop} from 'react-icons/ai'
-import {MdOutlineHealthAndSafety} from 'react-icons/md'
-import {TbMoodKid} from 'react-icons/tb'
-import {BsArrowThroughHeart} from 'react-icons/bs'
-import {IoHomeOutline,IoTodayOutline} from 'react-icons/io5'
-import {PiTShirtLight,PiDressLight} from 'react-icons/pi'

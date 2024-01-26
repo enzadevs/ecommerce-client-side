@@ -1,17 +1,13 @@
-import Highlights from 'components/Nav/Highlights'
 import IndexSwiper from 'components/Functions/IndexSwiper'
 import NewProducts from 'components/Containers/NewProducts'
-import DailyProducts from 'components/Containers/DailyProducts'
 import Groceries from 'components/Containers/Groceries'
 
 export default function HomePage(){
     return(
-        <div className='flex flex-col gap-4 mb-4'>
-            {/* <Highlights/>
+        <div className='flex flex-col gap-4 my-4'>
             <IndexSwiper/>
             <NewProducts/>
-            <DailyProducts/>
-            <Groceries/> */}
+            <Groceries/>
         </div>
     )
 }

@@ -1,11 +1,11 @@
 import { create } from 'zustand'
 import { persist,createJSONStorage } from 'zustand/middleware'
 
-export const IsSignedInStore = create (
+export const useIsSignedInStore = create (
     persist(
         (set,get) => ({
             isSignedIn: false,
-            setSignedIn: isSignedIn => set(() => ({isSignedIn: isSignedIn})),
+            setIsSignedIn: isSignedIn => set(() => ({isSignedIn: isSignedIn})),
         }),
         {
             name: 'is-signed-in',
