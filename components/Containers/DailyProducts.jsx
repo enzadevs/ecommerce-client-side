@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import ProductContainer from './ProductContainer/ProductContainer'
 
 export default function DailyProducts(){
