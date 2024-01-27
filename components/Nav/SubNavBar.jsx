@@ -2,12 +2,10 @@ import Link from 'next/link'
 import {PiFire,PiHeart,PiPercent} from 'react-icons/pi'
 import {LiaAppleAltSolid} from 'react-icons/lia'
 import {IoNewspaperOutline} from 'react-icons/io5'
-import CategoriesDropdown from './CategoriesDropdown'
 
 export default function SubNavBar(){
     return(
         <div className='flex-row-center justify-between gap-1 overflow-x-scroll overflow-y-hidden max-w-full md:gap-2 max-width hide-scrollbar'>
-            <CategoriesDropdown/>
             <Link href='/grocery' className='links'>
                 <LiaAppleAltSolid className='text-fancy-700 icons'/>
                 <>FRESH</>
