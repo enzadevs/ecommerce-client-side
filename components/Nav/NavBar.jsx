@@ -25,7 +25,7 @@ export default function NavBar(){
                 </Link>
                 <Link href='/profile/cart' className='nav-button'>
                     <PiShoppingCartSimple className='h-6 w-6 md:icons'/>
-                    <p className='hidden md:block'>Sebet</p>
+                    <p className='block'>999</p>
                 </Link>
                 <Link href='/profile' className='nav-button'>
                     <PiUserCircle className='h-6 w-6 md:icons'/>

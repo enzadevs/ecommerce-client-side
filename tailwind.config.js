@@ -37,8 +37,14 @@ module.exports = {
                     900: '#3d3d3d',
                     950: '#292929'
                 }
+            },
+            screens: {
+                'xs': '480px'
             }
         }
     },
-    plugins: []
+    plugins: [require('daisyui')],
+    daisyui: {
+        themes: []
+    }
 }

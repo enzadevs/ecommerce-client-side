@@ -1,4 +1,3 @@
-import IndexSwiper from 'components/Functions/IndexSwiper'
 import ProductContainer from 'components/Containers/ProductContainer/ProductContainer'
 
 export default async function NewStuffPage(){
@@ -11,7 +10,6 @@ export default async function NewStuffPage(){
     return(
         <div className='flex flex-col gap-4 my-4 max-width'>
             <h2 className='bg-grey-50 rounded-[4px] center text-xl text-fancy-700 font-bold px-2 h-10 w-fit'>Täze harytlar</h2>
-            <IndexSwiper/>
             <div className='grid-container'>
                 {/* {products.map(item => {
                     return(
@@ -24,7 +22,7 @@ export default async function NewStuffPage(){
                 {Array.from({ length: 17 }).map((_, index) => (
                     <ProductContainer
                         key={index}
-                        productInfo={products[0]} // Assuming you want to use the first item in the products array
+                        productInfo={products[0]}
                     />
                 ))}
             </div>
