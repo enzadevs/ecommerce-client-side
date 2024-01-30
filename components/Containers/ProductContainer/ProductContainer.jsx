@@ -34,11 +34,11 @@ export default function ProductContainer({productInfo}){
                     <p className='flex-row-center justify-end text-fancy-700 text-lg font-bold h-6 sm:h-10 flex-[55%]'>{sell_price} man.</p>
                 </div>
                 <div className='border rounded-[4px] flex-row-center justify-between gap-2 transition hover:border-fancy-700 hover:bg-grey-50 px-4 h-8 xs:h-10'>
-                    <button className='rounded-full center transition hover:bg-fancy-400 h-8 w-8'>
+                    <button className='rounded-full center transition hover:bg-fancy-400 h-6 w-6 xs:h-8 xs:w-8'>
                         <FiMinus className='icons'/>
                     </button>
                     <p>0</p>
-                    <button className='rounded-full center transition hover:bg-fancy-400 h-8 w-8'>
+                    <button className='rounded-full center transition hover:bg-fancy-400 h-6 w-6 xs:h-8 xs:w-8'>
                         <FiPlus className='icons'/>
                     </button>
                 </div>

@@ -1,3 +1,5 @@
+
+
 export default function ProfileInfoContainer(){
     return(
         <div className='flex flex-col gap-4' suppressHydrationWarning>
@@ -6,18 +8,18 @@ export default function ProfileInfoContainer(){
                 <div className='flex flex-col gap-2 h-auto w-full'>
                     <div className='border-b flex-row-center justify-between h-10'>
                         <p className='font-bold'>Doly adyňyz :</p>
-                        <>Egemberdiyev Eziz</>
+                        <>{}</>
                     </div>
                     <div className='border-b flex-row-center justify-between h-10'>
                         <p className='font-bold'>Şäheriňiz :</p>
-                        <>Aşgabat ş.</>
+                        <>{}</>
                     </div>
                     <div className='border-b flex-row-center justify-between h-10'>
                         <p className='font-bold'>Adresiňiz :</p>
-                        <>Gde to tut</>
+                        <>{}</>
                     </div><div className='border-b flex-row-center justify-between h-10'>
                         <p className='font-bold'>El telefon belgiňiz :</p>
-                        <>+1122334455</>
+                        <>{}</>
                     </div>     
                 </div>
                 <div className='flex flex-col items-center gap-2 w-full'>

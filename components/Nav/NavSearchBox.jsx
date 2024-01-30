@@ -7,7 +7,7 @@ export default function NavSearchBox(){
         <div className='flex-grow flex-row-center relative h-16'>
             <input
                 type='text'
-                className='input-primary w-full'
+                className='input-primary-custom w-full'
                 placeholder='Gözleg sözi'
                 minLength={2}
                 maxLength={64}

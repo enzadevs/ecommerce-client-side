@@ -4,6 +4,8 @@ import { persist,createJSONStorage } from 'zustand/middleware'
 export const useIsSignedInStore = create (
     persist(
         (set,get) => ({
+            currentUserObject: [],
+            // updateCurrentUserObject: 
             isSignedIn: false,
             setIsSignedIn: isSignedIn => set(() => ({isSignedIn: isSignedIn})),
         }),

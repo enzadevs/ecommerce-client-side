@@ -22,7 +22,7 @@ export default function RootLayout({children,params}){
     return(
         <html lang={params.locale} className={currentFont.className} suppressHydrationWarning>
             <body className='flex flex-col min-h-screen'>
-                <div className='bg-white border-b border-grey-200 shadow-sm sticky top-0 pb-2 w-full z-10'>
+                <div className='bg-white border-b border-grey-200 shadow-sm sticky top-0 pb-2 h-fit w-full z-10'>
                     <NavBar/>
                     <SubNavBar/>
                 </div>
