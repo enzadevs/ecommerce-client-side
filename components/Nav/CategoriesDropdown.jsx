@@ -9,11 +9,11 @@ import {TbMoodKid} from 'react-icons/tb'
 export default function CategoriesDropdown(){
     return(
         <div className='hidden md:dropdown h-10'>
-            <div tabIndex={0} role='button' className='rounded-[4px] font-bold flex-row-center gap-2 transition hover:bg-fancy-100 px-2 h-full'>
+            <div tabIndex={0} role='button' className='rounded-[4px] flex-row-center gap-2 transition hover:bg-fancy-100 px-2 h-full'>
                 <IoMenu className='icons'/>
                 Kategoriýalar
             </div>
-            <div tabIndex={0} className='dropdown-content mt-4 md:w-[768px] lg:w-[1000px]'>
+            <div tabIndex={0} className='dropdown-content mt-4 md:w-[768px] lg:w-[1100px]'>
                 <div className='bg-grey-100 border rounded-[4px] shadow-lg categories-grid py-2 px-4'>
                     <ul className='flex flex-col gap-1'>
                         <Link href='/' className='nav-link flex-row-center gap-1 font-bold h-8 w-fit'><AiOutlineDesktop className='icons'/>Elektronika</Link>
