@@ -5,7 +5,8 @@ export const useIsSignedInStore = create (
     persist(
         (set,get) => ({
             currentUserObject: [],
-            // updateCurrentUserObject: 
+            updateCurrentUserObject: (userData) =>
+                set((state) => ({ currentUserObject: userData })),
             isSignedIn: false,
             setIsSignedIn: isSignedIn => set(() => ({isSignedIn: isSignedIn})),
         }),

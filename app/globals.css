@@ -45,7 +45,7 @@ body {
 }
 
 .button-primary{
-    @apply bg-fancy-500 rounded-[4px] text-white flex flex-row items-center flex-shrink-0 gap-2 transition hover:bg-fancy-600 px-2 h-11;
+    @apply bg-fancy-500 rounded-[4px] text-white flex flex-row items-center flex-shrink-0 gap-2 transition hover:bg-fancy-600 px-2 h-9 xs:h-11;
 }
 
 .button-outline{
@@ -83,4 +83,12 @@ body {
 .swiper{
     position: relative;
     z-index: 0 !important;
+}
+
+.thumbs .swiper-slide {
+    opacity: 0.25;
+}
+
+.thumbs .swiper-slide-thumb-active {
+    opacity: 1;
 }

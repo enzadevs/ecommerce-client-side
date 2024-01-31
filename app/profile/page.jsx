@@ -8,8 +8,8 @@ export default function ProfilePage(){
     const isSignedIn = useIsSignedInStore(state => state.isSignedIn)
 
     return(
-        <>
+        <div suppressHydrationWarning>
             {isSignedIn ? <ProfileInfoContainer/> : <LoginPage/>}
-        </>
+        </div>
     )
 }

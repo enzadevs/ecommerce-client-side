@@ -10,6 +10,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function UserForm(){
     const [selectedCity,setSelectedCity] = useState()
     const setIsSignedIn = useIsSignedInStore(state => state.setIsSignedIn)
+    const updateCurrentUserObject = useIsSignedInStore(state => state.updateCurrentUserObject)
     const fullNameRef = useRef()
     const phoneNumberRef = useRef()
     const passwordRef = useRef()
@@ -28,7 +29,7 @@ export default function UserForm(){
             phone_number: phoneNumberRef.current.value,
             password: passwordRef.current.value,
             cityId: selectedCity,
-            address: addressRef.current.valu
+            address: addressRef.current.value
     }
     
         try {
@@ -41,6 +42,9 @@ export default function UserForm(){
         })
     
         if (response.ok) {
+            const responseData = await response.json();
+            const newUserId = responseData.id
+            updateCurrentUserObject(newUserId)
             setIsSignedIn(true)
         } else {
             console.error('Failed to create user')
@@ -53,18 +57,21 @@ export default function UserForm(){
     return(
         <div className='flex flex-col gap-4 w-full'>
             <input
+                type='text'
                 name='full_name'
                 ref={fullNameRef}
                 className='input-primary-custom w-full'
                 placeholder='Doly adyňyz'
             ></input>
             <input
+                type='text'
                 name='phone_number'
                 ref={phoneNumberRef}
                 className='input-primary-custom w-full'
                 placeholder='El telefon belgiňiz'
             ></input>
             <input
+                type='password'
                 name='password'
                 ref={passwordRef}
                 className='input-primary-custom w-full'
@@ -77,6 +84,7 @@ export default function UserForm(){
                 onSelect={handleCitySelection}
             />
             <input
+                type='text'
                 name='address'
                 ref={addressRef}
                 className='input-primary-custom w-full'

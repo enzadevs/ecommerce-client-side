@@ -2,7 +2,9 @@ import Link from 'next/link'
 import NavSearchBox from './NavSearchBox'
 import {HiOutlineHome} from 'react-icons/hi2'
 import {TbCategory2} from 'react-icons/tb'
-import {PiShoppingCartSimple,PiHeart,PiUserCircle} from 'react-icons/pi'
+import {PiHeart,PiUserCircle} from 'react-icons/pi'
+import ShoppingCart from './ShoppingCart'
+
 export default function NavBar(){
     return(
         <nav className='flex-row-center gap-2 md:gap-4 h-fit max-width'>
@@ -21,10 +23,7 @@ export default function NavBar(){
                     <PiHeart className='h-6 w-6 md:icons'/>
                     <p className='hidden md:block'>Halanlarym</p>
                 </Link>
-                <Link href='/profile/cart' className='nav-button'>
-                    <PiShoppingCartSimple className='h-6 w-6 md:icons'/>
-                    <p className='block'>0</p>
-                </Link>
+                <ShoppingCart/>
                 <Link href='/profile' className='nav-button'>
                     <PiUserCircle className='h-6 w-6 md:icons'/>
                     <p className='hidden md:block'>Hasabym</p>

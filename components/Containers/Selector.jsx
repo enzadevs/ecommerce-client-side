@@ -16,10 +16,6 @@ export default function Selector({selectData,placeholder,className,onSelect}){
         }, 1000)
     }
 
-    // const handleSelectChange = selectedOption => {
-    //     onSelect(selectedOption ? selectedOption.id : null)
-    // }
-
     return(
         <AsyncSelect
             cacheOptions 
