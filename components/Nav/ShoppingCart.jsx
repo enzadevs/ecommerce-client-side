@@ -21,7 +21,7 @@ export default function ShoppingCart(){
         return <p>Error</p>
     }
 
-    const totalQuantity = userData.shopping_cart.reduce((acc, cartItem) => acc + cartItem.quantity, 0)
+    const totalQuantity = userData.shopping_cart?.reduce((acc, cartItem) => acc + cartItem.quantity, 0) || 0
 
     return(
         <Link href='/profile/cart' className='nav-button'>
