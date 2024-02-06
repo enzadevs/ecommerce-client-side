@@ -13,7 +13,7 @@ export default function ShoppingCart(){
     const { data: userData, error, isLoading } = useSWR(`http://localhost:5000/users/${currentUserObject}`,fetcher)
 
     if (isLoading) {
-        return <p className='nav-button'>...</p>
+        return <p className='nav-button animate-pulse'><PiShoppingCartSimple className='h-6 w-6 md:icons'/> ...</p>
     }
 
     if (error) {

@@ -28,7 +28,7 @@ export default function LikedProductsPage() {
                 Halanlarym
             </h2>
             <div className='grid-container'>
-                {liked_products.map((likedProduct, index) => (
+                {liked_products?.map((likedProduct, index) => (
                     <ProductContainer
                         key={index}
                         productInfo={likedProduct}

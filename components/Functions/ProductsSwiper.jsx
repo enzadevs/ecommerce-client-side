@@ -31,7 +31,7 @@ export default function ProductsSwiper({images}){
                     <SwiperSlide key={undefined}>
                         <div className='relative h-full w-full'>
                             <Image
-                                src={item}
+                                src={'http://localhost:5000/images/' + item}
                                 alt='image of product'
                                 className='object-contain'
                                 fill
@@ -55,7 +55,7 @@ export default function ProductsSwiper({images}){
                     <SwiperSlide key={undefined}>
                         <button className='relative h-full w-full'>
                             <Image
-                                src={item}
+                                src={'http://localhost:5000/images/' + item}
                                 alt='thumbnail of currently selected image'
                                 className='border border-grey-400 rounded-[4px] object-cover'
                                 fill

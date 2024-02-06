@@ -67,7 +67,7 @@ export default function ProductContainerForUser({ productInfo: { quantity, produ
                 </div>
                 <div className='relative rounded-t-[4px] h-40 xs:h-48'>
                     <Image
-                        src={productImages[0]}
+                        src={'http://localhost:5000/images/' + productImages[0]}
                         alt='image'
                         className='object-contain'
                         sizes='33vw'
@@ -77,7 +77,7 @@ export default function ProductContainerForUser({ productInfo: { quantity, produ
                 </div>
             </div>
             <div className='border-t flex flex-col px-2 h-fit'>
-                <Link href={`/products/view/${productData.id}`} className='nav-link xs:text-base line-clamp-2 h-auto'>
+                <Link href={`/products/view/${productData.id}`} className='nav-link xs:text-base line-clamp-2 h-11'>
                     {productData.title}
                 </Link>
                 <div className='flex flex-col xs:flex-row xs:items-center h-auto'>

@@ -1,9 +1,9 @@
 'use client'
 
+import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import { useIsSignedInStore } from 'global/IsSignedIn'
-import Image from 'next/image'
-import Link from 'next/link'
 import {PiHeart} from 'react-icons/pi'
 import {TbShoppingCartPlus} from 'react-icons/tb'
 
@@ -66,7 +66,7 @@ export default function ProductContainer({productInfo}){
                 </div>
                 <div className='relative rounded-t-[4px] h-40 xs:h-48'>
                     <Image
-                        src={product_images[1]}
+                        src={'http://localhost:5000/images/' + product_images[1]}
                         alt='image'
                         className='object-contain'
                         sizes='33vw'
@@ -76,11 +76,11 @@ export default function ProductContainer({productInfo}){
                 </div>
             </div>
             <div className='border-t flex flex-col px-2 h-fit'>
-                <Link href={`products/view/${id}`} className='nav-link xs:text-base line-clamp-2 h-auto'>
+                <Link href={`products/view/${id}`} className='nav-link xs:text-base line-clamp-2 h-11'>
                     {title}
                 </Link>
                 <div className='flex flex-col xs:flex-row xs:items-center h-auto'>
-                    <p className='flex-row-center justify-end text-red-700 italic line-through text-xs sm:text-base h-4 sm:h-10 flex-[45%]'>20 man.</p>
+                    {/* <p className='flex-row-center justify-end text-red-700 italic line-through text-xs sm:text-base h-4 sm:h-10 flex-[45%]'>20 man.</p> */}
                     <p className='flex-row-center justify-end text-fancy-700 text-lg font-bold h-6 sm:h-10 flex-[55%]'>{sell_price} man.</p>
                 </div>
                 <button className='button-primary justify-center' onClick={handleAddToCart} disabled={addingToCart}>

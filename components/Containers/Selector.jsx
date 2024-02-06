@@ -5,7 +5,7 @@ const AsyncSelect = dynamic(() => import('react-select/async'), { ssr: false })
 
 export default function Selector({selectData,placeholder,className,onSelect}){
     const filterItems = inputValue => {
-        return selectData.filter(i =>
+        return selectData?.filter(i =>
             i.title.toLowerCase().includes(inputValue.toLowerCase())
         )
     }
